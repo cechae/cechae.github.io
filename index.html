@@ -4,10 +4,11 @@
 <head>
 	<title>My Portfolio</title>
     <link rel="stylesheet" text="text/css" href="index.css">
-    
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-</head>
+    <script src="https://kit.fontawesome.com/bf4ec32d9b.js" crossorigin="anonymous"></script>
+  </head>
 <body>
   
   <!-- Navigation -->
@@ -57,95 +58,120 @@
   </header>
 
   <!-- Main Content -->
-  <div class="container">
-    <!-- <div className="section-works" id="works">
-      <div className="title">
-          <h2>Works</h2>
-      </div>
-      <Modal
-        show={this.state.modalNum === -1 ? false : true}
-        onHide={() => this.setModalNum(-1)}
-        modalNum = {this.state.modalNum}
-      />
-      <div className="row1">
-        <div id="filters">
-            <ul className="clearfix" id="clearfix">
-                <li className="all btn" onClick={() => this.filterSelection('all')}> All </li>
-                <li className="react btn" onClick={() => this.filterSelection('react')}> React </li>
-                <li className="vanilla btn" onClick={() => this.filterSelection('vanilla')}> JavaScript</li>
-                <li className="java btn" onClick={() => this.filterSelection('java')}> Java </li>
-            </ul>
+    <!-- <div class="container">
+      <div className="section-works" id="works">
+        <div className="title">
+            <h2>Works</h2>
         </div>
-      </div>
-      <div className="row2">
-          <div className="portfolio-overlay filter-div all vanilla percussion" onClick={() => this.showModal(0)}>
-                <i className="fas fa-drum icon shown"></i>
-                <span className="hidden">Percussion Game</span>
+        <Modal
+          show={this.state.modalNum === -1 ? false : true}
+          onHide={() => this.setModalNum(-1)}
+          modalNum = {this.state.modalNum}
+        />
+        <div className="row1">
+          <div id="filters">
+              <ul className="clearfix" id="clearfix">
+                  <li className="all btn" onClick={() => this.filterSelection('all')}> All </li>
+                  <li className="react btn" onClick={() => this.filterSelection('react')}> React </li>
+                  <li className="vanilla btn" onClick={() => this.filterSelection('vanilla')}> JavaScript</li>
+                  <li className="java btn" onClick={() => this.filterSelection('java')}> Java </li>
+              </ul>
           </div>
-          
-          <div className="portfolio-overlay filter-div all react weather" onClick={() => this.showModal(1)}>
-            <i className="far fa-sun-cloud icon shown"></i>
-            <span className="hidden">Weather App</span>
-          </div>
-          <div className="portfolio-overlay filter-div all react todo"onClick={() => this.showModal(2)}>
-            <i className="fas fa-clipboard-list icon shown"></i>
-            <span className="hidden">To-Do App</span>
-          </div>
-          <div className="portfolio-overlay filter-div all react memory" onClick={() => this.showModal(3)}>
-            <i className="fas fa-game-board icon shown"></i>
-            <span className="hidden">Memory Game</span>
-          </div>
-          <div className="portfolio-overlay filter-div all vanilla color" onClick={() => this.showModal(4)}>
-            <i className="fas fa-palette icon shown"></i>
-            <span className="hidden">Color Game</span>
-          </div>
-          <div className="portfolio-overlay filter-div all java pikachu" onClick={() => this.showModal(5)}>
-            <i className="far fa-alien-monster icon shown"></i>
-            <span className="hidden">Pikachu Game</span>
+        </div>
+        <div className="row2">
+            <div className="portfolio-overlay filter-div all vanilla percussion" onClick={() => this.showModal(0)}>
+                  <i className="fas fa-drum icon shown"></i>
+                  <span className="hidden">Percussion Game</span>
+            </div>
+            
+            <div className="portfolio-overlay filter-div all react weather" onClick={() => this.showModal(1)}>
+              <i className="far fa-sun-cloud icon shown"></i>
+              <span className="hidden">Weather App</span>
+            </div>
+            <div className="portfolio-overlay filter-div all react todo"onClick={() => this.showModal(2)}>
+              <i className="fas fa-clipboard-list icon shown"></i>
+              <span className="hidden">To-Do App</span>
+            </div>
+            <div className="portfolio-overlay filter-div all react memory" onClick={() => this.showModal(3)}>
+              <i className="fas fa-game-board icon shown"></i>
+              <span className="hidden">Memory Game</span>
+            </div>
+            <div className="portfolio-overlay filter-div all vanilla color" onClick={() => this.showModal(4)}>
+              <i className="fas fa-palette icon shown"></i>
+              <span className="hidden">Color Game</span>
+            </div>
+            <div className="portfolio-overlay filter-div all java pikachu" onClick={() => this.showModal(5)}>
+              <i className="far fa-alien-monster icon shown"></i>
+              <span className="hidden">Pikachu Game</span>
 
-          </div>
-          <div className="portfolio-overlay filter-div all react beer" onClick={() => this.showModal(6)}>
-            <i className="fas fa-beer icon shown"></i>
-            <span className="hidden">Online BeerShop</span>
-          </div>
-      </div>
-  </div> -->
+            </div>
+            <div className="portfolio-overlay filter-div all react beer" onClick={() => this.showModal(6)}>
+              <i className="fas fa-beer icon shown"></i>
+              <span className="hidden">Online BeerShop</span>
+            </div>
+        </div>
+    </div> -->
    
   </div>
 
   <hr>
+
+
+
+   <!-- Contact Section -->
+   <section class="contact-section bg-black" id="contact">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fad fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Location</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a> New York, NY </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="mailto:cchae216@gmail.com">cchae216@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">+1 (917) 474-0231</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
 
    <!-- Footer -->
    <footer>
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <ul class="list-inline text-center">
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-          </ul>
+          
           <p class="copyright text-muted">Copyright &copy; Chungeun Chae</p>
         </div>
       </div>
