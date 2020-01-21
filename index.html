@@ -3,26 +3,158 @@
 
 <head>
 	<title>My Portfolio</title>
-	<link rel="stylesheet" text="text/css" href="app.css">
+    <link rel="stylesheet" text="text/css" href="index.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-    <h1> 
-        Hi, my name is Chungeun.
-	</h1>
-<div id="stripe">
-    <button id="reset">New Colors</button>
-    <button class="mode">Easy</button>
-    <button class="mode selected">Hard</button>
-</div>
-<div id="container">
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-</div>
+  
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Chungeun Chae</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#works">Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<script type="text/javascript" src="app.js"></script>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h2>Hello, I'm a Front-end developer</h2>
+            <hr class='divider'/>
+            <span>I am experienced in leveraging React frameworks to build rich interactive web apps. </span>
+            <a class='btn btn-xl' href="#works">
+              Find out more
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- <div className="section-works" id="works">
+      <div className="title">
+          <h2>Works</h2>
+      </div>
+      <Modal
+        show={this.state.modalNum === -1 ? false : true}
+        onHide={() => this.setModalNum(-1)}
+        modalNum = {this.state.modalNum}
+      />
+      <div className="row1">
+        <div id="filters">
+            <ul className="clearfix" id="clearfix">
+                <li className="all btn" onClick={() => this.filterSelection('all')}> All </li>
+                <li className="react btn" onClick={() => this.filterSelection('react')}> React </li>
+                <li className="vanilla btn" onClick={() => this.filterSelection('vanilla')}> JavaScript</li>
+                <li className="java btn" onClick={() => this.filterSelection('java')}> Java </li>
+            </ul>
+        </div>
+      </div>
+      <div className="row2">
+          <div className="portfolio-overlay filter-div all vanilla percussion" onClick={() => this.showModal(0)}>
+                <i className="fas fa-drum icon shown"></i>
+                <span className="hidden">Percussion Game</span>
+          </div>
+          
+          <div className="portfolio-overlay filter-div all react weather" onClick={() => this.showModal(1)}>
+            <i className="far fa-sun-cloud icon shown"></i>
+            <span className="hidden">Weather App</span>
+          </div>
+          <div className="portfolio-overlay filter-div all react todo"onClick={() => this.showModal(2)}>
+            <i className="fas fa-clipboard-list icon shown"></i>
+            <span className="hidden">To-Do App</span>
+          </div>
+          <div className="portfolio-overlay filter-div all react memory" onClick={() => this.showModal(3)}>
+            <i className="fas fa-game-board icon shown"></i>
+            <span className="hidden">Memory Game</span>
+          </div>
+          <div className="portfolio-overlay filter-div all vanilla color" onClick={() => this.showModal(4)}>
+            <i className="fas fa-palette icon shown"></i>
+            <span className="hidden">Color Game</span>
+          </div>
+          <div className="portfolio-overlay filter-div all java pikachu" onClick={() => this.showModal(5)}>
+            <i className="far fa-alien-monster icon shown"></i>
+            <span className="hidden">Pikachu Game</span>
+
+          </div>
+          <div className="portfolio-overlay filter-div all react beer" onClick={() => this.showModal(6)}>
+            <i className="fas fa-beer icon shown"></i>
+            <span className="hidden">Online BeerShop</span>
+          </div>
+      </div>
+  </div> -->
+   
+  </div>
+
+  <hr>
+
+   <!-- Footer -->
+   <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Chungeun Chae</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
