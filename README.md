@@ -1,2 +1,2 @@
 # spicysos.github.io
-live demo -> www.chungeunchae.com
+live demo -> http://chungeunchae.com/
