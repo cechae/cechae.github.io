@@ -22,7 +22,7 @@
   }
   
   a:focus, a:hover {
-    color: #0085A1;
+    color: #f4623a;
   }
   
   .section-heading {
@@ -130,6 +130,10 @@
     background-color: #f4623a;
   }
 
+  .card .card-body .text-primary {
+    color:#f4623a!important;
+}
+
 
   @media only screen and (min-width: 992px) {
     #mainNav {
@@ -141,14 +145,14 @@
       color: #fff;
     }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: rgba(255, 255, 255, 0.8);
+      color:  #f4623a;
     }
     #mainNav .navbar-nav > li.nav-item > a {
       padding: 10px 20px;
       color: #fff;
     }
     #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-      color: rgba(255, 255, 255, 0.8);
+      color:  #f4623a;
     }
     #mainNav {
         transition: background-color 0.2s;
@@ -166,19 +170,44 @@
         color: #212529;
       }
       #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-        color: #0085A1;
+        color:  #f4623a;
       }
       #mainNav.is-fixed .navbar-nav > li.nav-item > a {
         color: #212529;
       }
       #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-        color: #0085A1;
+        color:  #f4623a;
       }
       #mainNav.is-visible {
         /* if the user changes the scrolling direction, we show the header */
         transform: translate3d(0, 100%, 0);
       }
   }
+
+    /*Footer*/
+    .contact-section .card {
+        border: 0;
+        border-bottom: .25rem solid #f4623a;
+        background-color: #ffecef
+    }
+    .contact-section .card h4 {
+        font-size: .8rem;
+        font-family: 'Varela Round';
+        text-transform: uppercase;
+        letter-spacing: .15rem;
+    }
+    
+    .contact-section .card hr {
+        border-color: #f4623a;
+        border-width: .25rem;
+        width: 3rem;
+    }
+    .text-black-50 {
+        color: #212529;
+    }
+    .small a {
+        color:#f4623a;
+    }
   
   @media only screen and (min-width: 768px) {
     header.masthead .page-heading,
