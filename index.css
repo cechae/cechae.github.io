@@ -371,7 +371,7 @@
         color:#f4623a;
     }
   
-  @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     header.masthead .page-heading,
     header.masthead .site-heading {
       padding: 200px 0;
@@ -380,5 +380,11 @@
     header.masthead .site-heading h1 {
       font-size: 80px;
     }
-  }
   
+}
+@media only screen and (max-width: 768px) {
+    header.masthead {
+      height: auto !important;
+    }
+
+}
