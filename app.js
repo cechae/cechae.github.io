@@ -1,5 +1,6 @@
+
 $( "#click-btn" ).click(function() {
-    $( "#name-block" ).animate({ "right": "-=50px" }, "slow" );
+    $( "#" ).animate({ "right": "-=50px" }, "slow" );
   });
 
 
