@@ -8,6 +8,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/bf4ec32d9b.js" crossorigin="anonymous"></script>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="animate.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/css/uikit.min.css" />
+
+ 
   </head>
 <body>
   
@@ -28,7 +34,7 @@
             <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#works">Works</a>
+            <a class="nav-link" href="#portfolio">Works</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contact</a>
@@ -39,7 +45,7 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('bg.jpg')">
+  <header class="masthead " style="background-image: url('bg.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
@@ -47,7 +53,7 @@
           <div class="site-heading">
             <h2>Hello, I'm a Front-end web developer</h2>
             <hr class='divider'/>
-            <span>I am experienced in leveraging React frameworks to build rich interactive web apps. </span>
+            <span id='div-span'>I am experienced in leveraging React frameworks to build rich interactive web apps. </span>
             <a class='btn btn-xl' href="#works">
               Find out more
             </a>
@@ -57,66 +63,85 @@
     </div>
   </header>
 
-  <!-- Main Content -->
-    <!-- <div class="container">
-      <div className="section-works" id="works">
-        <div className="title">
-            <h2>Works</h2>
+  
+  <section class="bg-light page-section" id="portfolio">
+    <div class="container" uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 200;">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Works</h2>
+          <h3 class="section-subheading text-muted">Here are some examples of my latest works. </h3>
         </div>
-        <Modal
-          show={this.state.modalNum === -1 ? false : true}
-          onHide={() => this.setModalNum(-1)}
-          modalNum = {this.state.modalNum}
-        />
-        <div className="row1">
-          <div id="filters">
-              <ul className="clearfix" id="clearfix">
-                  <li className="all btn" onClick={() => this.filterSelection('all')}> All </li>
-                  <li className="react btn" onClick={() => this.filterSelection('react')}> React </li>
-                  <li className="vanilla btn" onClick={() => this.filterSelection('vanilla')}> JavaScript</li>
-                  <li className="java btn" onClick={() => this.filterSelection('java')}> Java </li>
-              </ul>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 portfolio-item uk-card" >
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p> Percussion Game</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="bg.jpg" alt="">
+          </a>
+          
         </div>
-        <div className="row2">
-            <div className="portfolio-overlay filter-div all vanilla percussion" onClick={() => this.showModal(0)}>
-                  <i className="fas fa-drum icon shown"></i>
-                  <span className="hidden">Percussion Game</span>
+        <div class="col-md-4 col-sm-6 portfolio-item uk-card">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p> Weather App </p>
+              </div>
             </div>
-            
-            <div className="portfolio-overlay filter-div all react weather" onClick={() => this.showModal(1)}>
-              <i className="far fa-sun-cloud icon shown"></i>
-              <span className="hidden">Weather App</span>
-            </div>
-            <div className="portfolio-overlay filter-div all react todo"onClick={() => this.showModal(2)}>
-              <i className="fas fa-clipboard-list icon shown"></i>
-              <span className="hidden">To-Do App</span>
-            </div>
-            <div className="portfolio-overlay filter-div all react memory" onClick={() => this.showModal(3)}>
-              <i className="fas fa-game-board icon shown"></i>
-              <span className="hidden">Memory Game</span>
-            </div>
-            <div className="portfolio-overlay filter-div all vanilla color" onClick={() => this.showModal(4)}>
-              <i className="fas fa-palette icon shown"></i>
-              <span className="hidden">Color Game</span>
-            </div>
-            <div className="portfolio-overlay filter-div all java pikachu" onClick={() => this.showModal(5)}>
-              <i className="far fa-alien-monster icon shown"></i>
-              <span className="hidden">Pikachu Game</span>
-
-            </div>
-            <div className="portfolio-overlay filter-div all react beer" onClick={() => this.showModal(6)}>
-              <i className="fas fa-beer icon shown"></i>
-              <span className="hidden">Online BeerShop</span>
-            </div>
+            <img class="img-fluid" src="bg.jpg" alt="">
+          </a>
+          
         </div>
-    </div> -->
-   
-  </div>
-
-  <hr>
-
-
+        <div class="col-md-4 col-sm-6 portfolio-item uk-card">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p> To-Do App</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="bg.jpg" alt="">
+          </a>
+          
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item uk-card">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p> Memory Game</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="bg.jpg" alt="">
+          </a>
+          
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item uk-card">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p> Color Game</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="bg.jpg" alt="">
+          </a>
+          
+        </div>
+        <div class="col-md-4 col-sm-6 portfolio-item uk-card">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <p>Online BeerShop</p>
+              </div>
+            </div>
+            <img class="img-fluid" src="bg.jpg" alt="">
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
 
    <!-- Contact Section -->
    <section class="contact-section bg-black" id="contact">
@@ -160,14 +185,12 @@
           </div>
         </div>
       </div>
-
-
     </div>
   </section>
 
 
    <!-- Footer -->
-   <footer>
+   <footer class="wow fadeIn" data-wow-delay="1s"> 
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
@@ -178,9 +201,49 @@
     </div>
   </footer>
 
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+  <!-- Portfolio Modals -->
+
+  <!-- Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="bg.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Threads</li>
+                  <li>Category: Illustration</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/js/uikit-icons.min.js"></script>
+ 
   <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
