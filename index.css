@@ -85,17 +85,88 @@
     color: white;
   }
 
+
+
+.portfolioItem {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+
+.portfolioItem .caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.portfolioItem .caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem;
+}
+
+.portfolioItem .caption .caption-content h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.portfolioItem .caption .caption-content p {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.portfolioItem .img-background{
+  background-color: yellowgreen;
+}
+
+@media (min-width: 992px) {
+  .portfolioItem {
+    max-width: none;
+    margin: 0;
+  }
+  .portfolioItem .caption {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out, background-color 0.7s;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+  .portfolioIItem .caption .caption-content {
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  .portfolioItem .img {
+    -webkit-transition: -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+  .portfolioItem:hover .img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  .portfolioItem:hover .caption {
+    background-color: rgba(29, 128, 159, 0.9);
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+}
+
   /*section works */
-  #portfolio {
+  /* #portfolio {
     padding-top: 50px;
     padding-bottom: 100px;
   }
-  #portfolio .portfolio-item {
+  #portfolio .portfolioItem {
     right: 0;
     margin: 0 0 15px;
   }
   
-  #portfolio .portfolio-item .portfolio-link {
+  #portfolio .portfolioItem .portfolio-link {
     position: relative;
     display: block;
     max-width: 400px;
@@ -103,7 +174,7 @@
     cursor: pointer;
   }
   
-  #portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  #portfolio .portfolioItem .portfolio-link .portfolio-hover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -112,11 +183,11 @@
     background: #363636;
   }
   
-  #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  #portfolio .portfolioItem .portfolio-link .portfolio-hover:hover {
     opacity: 0.85;
   }
   
-  #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  #portfolio .portfolioItem .portfolio-link .portfolio-hover .portfolio-hover-content {
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -127,7 +198,7 @@
     color: white;
   }
   
-  #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  #portfolio .portfolioItem .portfolio-link .portfolio-hover .portfolio-hover-content i {
     margin-top: -12px;
   }
   
@@ -158,7 +229,7 @@
   
   #portfolio * {
     z-index: 2;
-  }
+  } */
   
   /* Modal */
 
