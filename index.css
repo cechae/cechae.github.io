@@ -99,7 +99,7 @@
   display: flex;
   height: 100%;
   width: 100%;
-  background-color: rgba(33, 37, 41, 0.2);
+  /* background-color: rgba(33, 37, 41, 0.2); */
   position: absolute;
   top: 0;
   bottom: 0;
@@ -107,10 +107,10 @@
 }
 
 .portfolioItem .caption .caption-content {
+  
   color: #fff;
   margin: auto 2rem 2rem;
 }
-
 .portfolioItem .caption .caption-content h2 {
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -150,89 +150,23 @@
     clip-path: inset(2rem);
   }
   .portfolioItem:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
+    background-color: rgba(38, 49, 53, 0.9);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
+
   }
+  .portfolioItem .text {
+    display: none;
+  }
+  .portfolioItem:hover .text {
+    display: block;
+    font-size: 2rem;    
+    margin-left: 1rem;
+    top: 40%;
+    position: absolute;
 }
 
-  /*section works */
-  /* #portfolio {
-    padding-top: 50px;
-    padding-bottom: 100px;
-  }
-  #portfolio .portfolioItem {
-    right: 0;
-    margin: 0 0 15px;
-  }
-  
-  #portfolio .portfolioItem .portfolio-link {
-    position: relative;
-    display: block;
-    max-width: 400px;
-    margin: 0 auto;
-    cursor: pointer;
-  }
-  
-  #portfolio .portfolioItem .portfolio-link .portfolio-hover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: all ease 0.5s;
-    opacity: 0;
-    background: #363636;
-  }
-  
-  #portfolio .portfolioItem .portfolio-link .portfolio-hover:hover {
-    opacity: 0.85;
-  }
-  
-  #portfolio .portfolioItem .portfolio-link .portfolio-hover .portfolio-hover-content {
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 20px;
-    margin-top: -12px;
-    text-align: center;
-    color: white;
-  }
-  
-  #portfolio .portfolioItem .portfolio-link .portfolio-hover .portfolio-hover-content i {
-    margin-top: -12px;
-  }
-  
-  #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-  #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
-    margin: 0;
-  }
-  
-  #portfolio .portfolio-item .portfolio-caption {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 25px;
-    text-align: center;
-    background-color: #fff;
-  }
-  
-  #portfolio .portfolio-item .portfolio-caption h4 {
-    margin: 0;
-    text-transform: none;
-  }
-  
-  #portfolio .portfolio-item .portfolio-caption p {
-    font-size: 16px;
-    font-style: italic;
-    margin: 0;
-    font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  }
-  
-  #portfolio * {
-    z-index: 2;
-  } */
-  
-  /* Modal */
-
+/* Modal */
 .portfolio-modal .modal-dialog {
   margin: 1rem;
   max-width: 100vw;
@@ -416,6 +350,9 @@
   }
 
     /*Footer*/
+    .contact-section {
+      margin-top: 5rem;
+    }
     .contact-section .card {
         border: 0;
         border-bottom: .25rem solid #f4623a;
@@ -440,6 +377,7 @@
     .small a {
         color:#f4623a;
     }
+}
   
 @media only screen and (min-width: 768px) {
     header.masthead .page-heading,
