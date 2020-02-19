@@ -176,8 +176,9 @@
 
 /* Modal */
 .portfolio-modal .modal-dialog {
-  margin: 1rem;
+  margin: 40px 160px;
   max-width: 100vw;
+
 }
 
 .portfolio-modal .modal-content {
@@ -186,8 +187,17 @@
 }
 
 .portfolio-modal .modal-content h2 {
-  font-size: 3em;
+  font-size: 2rem;
   margin-bottom: 15px;
+}
+.portfolio-modal .modal-content .container {
+  padding-right: 30px;
+}
+.portfolio-modal .modal-content .col-lg-4.mx-auto {
+  margin-top: 4rem;
+}
+.portfolio-modal .modal-content .col-lg-8.mx-auto {
+  padding-right: 0;
 }
 
 .portfolio-modal .modal-content p {
