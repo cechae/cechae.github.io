@@ -85,7 +85,12 @@
     color: white;
   }
 
-
+#portfolio {
+  margin-bottom: 7rem;
+}
+#portfolio .container, #contact .container {
+  padding: 0 54px;
+}
 
 .portfolioItem {
   display: block;
@@ -122,6 +127,9 @@
 }
 .portfolioItem .img-background{
   background-color: yellowgreen;
+}
+.contact-me {
+  text-align: center;
 }
 
 @media (min-width: 992px) {
