@@ -289,6 +289,9 @@ header.masthead .site-heading {
 .portfolio-modal .close-modal:hover {
   opacity: 0.3;
 }
+i.fa-github-square{
+  font-size: 2rem;
+}
 
 .portfolio-modal .close-modal .lr {
   /* Safari and Chrome */
@@ -404,7 +407,7 @@ footer .copyright {
 .text-black-50 {
     color: #212529;
 }
-.small a {
+.small a, .card-body .red {
     color:#f4623a;
 }
 
