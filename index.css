@@ -81,35 +81,51 @@ hr.divider{
 .card .card-body .text-primary {
   color: #6f88c4 !important;
 }
-/* #mainNav {
-  position: absolute;
-  border-bottom: 1px solid #e9ecef;
-  background-color: white;
-  font-family: 'Varela Round', Helvetica, Arial, sans-serif;
-}
-
-#mainNav .navbar-brand {
-  font-weight: 800;
-  color: #343a40;
-}
-
-#mainNav .navbar-toggler {
-  font-size: 0.9rem;
-  font-weight: 800;
-  padding: 13px;
+.contact-me .btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid #a5b5da;
+  border-radius: 0.6em;
+  color:  #a5b5da;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
   text-transform: uppercase;
-  color: #343a40;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
-#mainNav .navbar-nav > li.nav-item > a {
-  font-size: 0.9rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+.contact-me .btn:hover, .contact-me .btn:focus {
+  color: #fff;
+  outline: 0;
 }
 
-.site-heading h2 {
-  color: white;
-} */
+.first {
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+.first:hover {
+  box-shadow: 0 0 40px 40px #a5b5da inset;
+  text-decoration: none;
+}
+.contact-me a:hover {
+  text-decoration: none;
+}
+
 .masthead {
   animation: fadeIn 0.15s ease-in;
 }
@@ -130,6 +146,9 @@ hr.divider{
   display: block;
   width: 30%;
   align-self: center;
+}
+.my-picture img {
+  border-radius: 50%;
 }
 #about .desc {
   width: 70%;
@@ -182,6 +201,8 @@ hr.divider{
 }
 .contact-me {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 
