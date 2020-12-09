@@ -142,13 +142,14 @@ hr.divider{
   to{transform:scale(1)}
 }
 .my-picture {
+  margin-top: 10%;
   max-width: 100%;
   display: block;
   width: 30%;
-  align-self: center;
+  align-self: flex-start;
 }
 .my-picture img {
-  border-radius: 50%;
+  border-radius: 10%;
 }
 #about .desc {
   width: 70%;
@@ -385,9 +386,27 @@ footer .copyright {
     color: #333333;
 }
 
-
+@media (min-width: 576px) {
+  #about .container, #about .container-sm {
+    max-width: 640px;
+  }
+}
 
 @media only screen and (max-width: 767px) {
+  .container, .container-md, .container-sm {
+    max-width: 928px;
+  }
+  .flex-container {
+    flex-direction: column;
+  }
+  .my-picture {
+    width: 100%;
+    padding: 2rem;
+  }
+  #about .desc {
+    width: 100%;
+    padding: 1rem;
+}
   .btn.btn-xl {
     display: block !important;
   }
@@ -845,9 +864,10 @@ footer .copyright {
 .btn-primary {
   background-color: #0085A1;
   border-color: #0085A1;
+  color: #a5b5da;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+.btn-primary:hover {
   color: #fff;
   background-color: #00657b !important;
   border-color: #00657b !important;
