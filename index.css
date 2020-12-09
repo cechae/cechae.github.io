@@ -481,6 +481,7 @@ blockquote {
   font-size: 36px;
   font-weight: 700;
   margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .caption {
@@ -527,7 +528,9 @@ img::-moz-selection {
   background-color: white;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
+/* #mainNav.works-section .navbar-brand, #mainNav.works-section .navbar-nav > li.nav-item > a {
+  color: #333333;
+} */
 #mainNav .navbar-brand {
   font-weight: 800;
   color: #343a40;
@@ -620,7 +623,11 @@ header.masthead .overlay {
   background-color: #212529;
   opacity: 0.5;
 }
-
+header.masthead.portfolio-show .overlay {
+  
+  background-color: #191a1d;
+  opacity: 1;
+}
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
@@ -646,6 +653,13 @@ header.masthead .site-heading h1 {
   font-size: 50px;
   margin-top: 0;
 }
+header.masthead .site-heading.dark h1 {
+   color: #fff;
+}
+header.masthead .site-heading.dark .subtitle {
+  color: #ababab;
+}
+
 
 header.masthead .page-heading .subheading,
 header.masthead .site-heading .subheading {
