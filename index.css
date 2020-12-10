@@ -361,12 +361,13 @@ hr.divider{
   top: 0;
   bottom: 0;
   z-index: 1;
+  justify-content: center;
 }
 
 .portfolioItem .caption .caption-content {
   
   color: #fff;
-  margin: auto 2rem 2rem;
+  align-self: center;
 }
 .portfolioItem .caption .caption-content h2 {
   font-size: 0.8rem;
@@ -375,7 +376,7 @@ hr.divider{
 
 .portfolioItem .caption .caption-content p {
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .portfolioItem .img-background{
   background-color: yellowgreen;
@@ -391,6 +392,7 @@ hr.divider{
 .portfolioItem {
   max-width: none;
   margin: 0;
+  border-radius: 2px;
 }
 .portfolioItem .caption {
   -webkit-transition: background-color 0.5s;
@@ -411,10 +413,8 @@ hr.divider{
 }
 .portfolioItem:hover .text {
   display: block;
-  font-size: 2rem;    
-  margin-left: 1rem;
-  top: 40%;
-  position: absolute;
+  font-size: 2rem;
+  
 }
 
 /* Modal */
@@ -566,8 +566,21 @@ footer .copyright {
 }
 
 @media only screen and (max-width: 767px) {
+  #portfolio .container  {
+    padding: 0;
+  }
+  .card-body {
+    padding: 0.25rem;
+  }
+  .card-body .no-gutters>[class*=col-] {
+    padding: 1rem 1rem 1rem 0;
+    width: 100%;
+  }
+  #portfolio, #skills {
+    padding-bottom: 3rem;
+  }
   .container, .container-md, .container-sm {
-    max-width: 928px;
+    max-width: none;
   }
   .flex-container {
     flex-direction: column;
@@ -619,7 +632,7 @@ footer .copyright {
   margin-bottom: 0;
 }
 .no-gutters>[class*=col-] {
-  margin: 1.5rem 1rem;
+  margin: 0.5rem 0rem;
 }
 .portfolio-modal .modal-content h2 {
   font-size: 1.5rem;
