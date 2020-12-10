@@ -41,12 +41,6 @@ $( "#click-btn" ).click(function() {
           this.previousTop = currentTop;
         });
     }
-    // var image = new Image();
-    // image.onload = function () {
-    //         $(".masthead").css("background-image", "url('" + image.src + "')");
-    // }
-
-    // image.src = "https://images.unsplash.com/photo-1511184150666-9bb7d41a88f4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1650&q=80";
   
   })(jQuery); // End of use strict
   

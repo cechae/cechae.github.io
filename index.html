@@ -5,11 +5,12 @@
 	<title>ChungEunChae</title>
     <link rel="stylesheet" text="text/css" href="index.css">
     <link rel="stylesheet" text="text/scss" href="/_portfolio.scss">
-    <!-- <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> -->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/bf4ec32d9b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <!-- Animate.css -->
     <link rel="stylesheet" href="animate.css">
     <!-- UIkit CSS -->
@@ -21,7 +22,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Chungeun Chae</a>
+      <a class="navbar-brand" href="index.html"><i class="fas fa-coffee"></i></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -49,8 +50,8 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <div class="site-heading popout">
-          <span class="subheading ">Hello! I am a front-end developer based in NY. </span>
+        <div class="site-heading typewriter">
+          <p class="">Hello! I'm a front-end developer based in NY.</p>
         </div>
       </div>
     </div>
@@ -58,69 +59,9 @@
 </header>
 
 
-   <!-- Skills Section -->
-<!-- 
-   <section class="content-section" id="skills">
-    <div class="container" uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 200;">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Professional Skills</h2>
-          <h3 class="section-subheading text-muted my-experience"> My experience includes the following technologies: </h3>
-        </div>
-      </div>
-      <div class="row no-gutters" >
 
-        <div class="col-md-6 uk-card">
-          <div class="skillItem">
-            <div class="text flex"> 
-                <div class="col-md-4">Front-End</div> 
-                <div class="col-md-8">
-                  <div class="item">HTML5</div>
-                  <div class="item">CSS3 - CSS Grid, CSS Flexbox</div>
-                  <div class="item">JavaScript ES 5-6 </div>
-                  <div class="item">React & React-Hooks</div>
-                  <div class="item">Bootstrap & React-Bootstrap</div>
-                  <div class="item">JQuery</div>
-                </div>
-            </div>
+<div class="main-container">
 
-            <div class="text flex"> 
-              <div class="col-md-4">Back-End</div> 
-              <div class="col-md-8">
-                <div class="item">Node, NPM</div>
-                <div class="item">Express</div>
-                <div class="item">NoSQL - MongoDB</div>
-                <div class="item">GraphQL</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 uk-card">
-          <div class="skillItem">
-
-            <div class="text flex"> 
-              <div class="col-md-4"> Other Skills: </div> 
-              <div class="col-md-8">
-                <div class="item">Java SE7</div>
-                <div class="item">MatLab</div>
-                <div class="item">Git/GitHub</div>
-                <div class="item">AWS EC2</div>
-              </div>
-            </div>
-
-            <div class="text flex"> 
-              <div class="col-md-4"> Design: </div> 
-              <div class="col-md-8">
-                <div class="item">Sketch</div>
-                <div class="item">Figma</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
   <section class="content-section about-section" id="about">
     <div class="container" uk-scrollspy="cls: uk-animation-fade; target: .flex-container; delay: 200;">
         <div class="flex-container">
@@ -148,27 +89,24 @@
               </div>
             </div>
         </div>
-      
     </div>
   </section>
 
   <!-- check out my work here section -->
-  <section class="contact-section bg-black" id="contact">
-    <div class='contact-me'>
+  
+    
+    <div class='checkout-work'>
       
-      <a href="works.html"> <button class="btn first">Check out my work here</button> </a>
+      <a class='work-btn' href="works.html"> <button class="btn first">Check out my work here</button> </a>
       
+
     </div>
-    <div class="container">
-      
-    </div>
-  </section>
   
 
 
    <!-- Contact Section -->
-   <section class="contact-section bg-black" id="contact">
-    <div class='contact-me'>
+   <section class="bg-black" id="contact">
+    <div class='container contact-me'>
       
       <h2> Contact me </h2>
     </div>
@@ -209,7 +147,7 @@
               <hr class="my-4">
               <div class="small text-black-50">            
                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/spicysos">
-                  <i class="fab fa-github text-primary"></i>
+                  <i class="fab fa-github"></i>
                 </a>
             </div>
             </div>
@@ -218,7 +156,7 @@
       </div>
     </div>
   </section>
-
+</div>
 
 
   
