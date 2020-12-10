@@ -6,9 +6,9 @@
     <link rel="stylesheet" text="text/css" href="index.css">
     <link rel="stylesheet" text="text/scss" href="/_portfolio.scss">
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/bf4ec32d9b.js" crossorigin="anonymous"></script>
@@ -18,99 +18,163 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/css/uikit.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
  
-  </head>
+</head>
+
 <body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top works-section" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Chae</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="works.html">Works</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <div class="portfolio-show dearest-io dearest-building">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top works-section" id="mainNav">
+            <div class="container">
+            <a class="navbar-brand" href="index.html">Chae</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="works.html">Works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
 
-<!-- Page Header -->
-<header class="masthead portfolio-show" >
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="site-heading dark">
-              
-            <h1> Online Beer Shop</h1>
-            <h3 class="subtitle"> A simple online e-commeerce website  </h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-  
-  
-  
-  <!-- Portfolio -->
-  <section class="content-section contact-section" id="portfolio-show">
-    <div class="container" uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 200;">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          
-        </div>
-      </div>
-
+        <!-- Page Header -->
+        <header class="masthead " >
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row"  uk-scrollspy="cls: uk-animation-fade; target: .site-heading; delay: 200;">
+                    <div class="col-lg-8 col-md-10 mx-auto">
+                        <div class="site-heading dark">
+                            
+                            <a target="_blank" href="https://www.dearest.io/buildinglink/welcome/samplesample123"> <h1> BeerDotCom </h1> </a>
+                            <h3 class="subtitle">A simple online beer shop utilizing PunkBeerAPI </h3>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
         
-            <!-- <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">	
-                <div class="modal-dialog">	
-                <div class="modal-content">	
-                    <div class="close-modal" data-dismiss="modal">	
-                    <div class="lr">	
-                        <div class="rl"></div>	
-                    </div>	
-                    </div>	
-                    <div class="container">	
-                    <div class="row">	
-                        <div class="col-lg-8 mx-auto">	
-                        <div class="modal-body">	
-                            <img class="img-fluid d-block mx-auto" src="img/resized_beer.png" alt="">	
+        <section>
+            <div class="container">
 
-                        </div>	
-                        </div>	
-                        <div class="col-lg-4 mx-auto">	
-                        <h2 class="text-uppercase">Online Beershop</h2>	
-                        <ul class="list-inline">	
-                            <div>	
-                            <i class="fas fa-code"></i> HTML, CSS, JavaScript, React	
-                            </div>	
-                            <p> Online Beershop is a basic e-commerce website built with React that uses PunkAPI to fetch thousands of beer data. It has a landing page with a search bar, and a paginated search result page. </p>	
-                            <p> <i class="fas fa-beer"></i> <a target="_blank" rel="noopener noreferrer" href="https://the-beer-shop1.herokuapp.com/">Live Demo</a></p>	
-                            <p><i class="fab fa-github"></i><a target="_blank" rel="noopener noreferrer" href="https://github.com/spicysos/Beer"> Github</a></p>	
+                <div class="tile-wrapper tile-2">
+                    <a className="tile">      
+                    
+                    <div class="image-container">
+                        <img src="img/beer_mobile_desc.png">
+                    </div>
+                    </a>
+                </div>
+                <div class="description" uk-scrollspy="cls: uk-animation-fade; target: .h2-desc; delay: 200;">
+                    <div>
+                        <h2 class="h2-desc"> BeerDotCom is a web app that retrieves beers according to the user search input.  </h2>
+                    </div>
+                    
+                    <div>
+                        <p class="h2-desc h2-explanation">
+                          <ul>
+                            <li>fully responsive across multiple devices (phone, tablet, laptop, and desktop computers)</li>
+                            <li>Makes API calls to PunkBeer API and handle loading, resolved and error conditions</li>
+                            <li>Pagination</li>
+                          </ul>
+                         
+                        </p>
+                    </div>
+                    <div>
+                        <p class="h2-desc">Technology used: React, HTML, CSS, and JavaScript (MaterialUI for some component designs) </p>
+                        <p></p>
+                    </div>
+                </div>
 
-                        </ul>	
-                        </div>	
-                    </div>	
-                    </div>	
-                </div>	
-                </div>	
+                <div class="tile-wrapper tile-2">
+                    <a className="tile">      
+                    
+                    <div class="image-container">
+                        <img src="img/beer-search-desk.png">
+                    </div>
+                    </a>
+                </div>
+                
+            </div> 
+        </section>
+        
+        
+        <!-- Portfolio -->
+        <section class="" id="portfolio-show">
+            <div class="container" uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 200;">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                    
+                    </div>
+                </div>
+
+                <!-- <div class="tile-wrapper tile-1">
+                <a className="tile ">
+                <div class="image-container">
+                    <img src="img/mobile-dearest-io.png"> 
+                </div>
+                </a>
             </div> -->
-  
 
-      
+            <!-- <div class="tile-wrapper tile-2">
+                <a className="tile">      
+                
+                <div class="image-container">
+                    <img src="img/mobile-dearest-academy.png">
+                </div>
+                </a>
+            </div> -->
+
+                    <!-- <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">	
+                        <div class="modal-dialog">	
+                        <div class="modal-content">	
+                            <div class="close-modal" data-dismiss="modal">	
+                            <div class="lr">	
+                                <div class="rl"></div>	
+                            </div>	
+                            </div>	
+                            <div class="container">	
+                            <div class="row">	
+                                <div class="col-lg-8 mx-auto">	
+                                <div class="modal-body">	
+                                    <img class="img-fluid d-block mx-auto" src="img/resized_beer.png" alt="">	
+
+                                </div>	
+                                </div>	
+                                <div class="col-lg-4 mx-auto">	
+                                <h2 class="text-uppercase">Online Beershop</h2>	
+                                <ul class="list-inline">	
+                                    <div>	
+                                    <i class="fas fa-code"></i> HTML, CSS, JavaScript, React	
+                                    </div>	
+                                    <p> Online Beershop is a basic e-commerce website built with React that uses PunkAPI to fetch thousands of beer data. It has a landing page with a search bar, and a paginated search result page. </p>	
+                                    <p> <i class="fas fa-beer"></i> <a target="_blank" rel="noopener noreferrer" href="https://the-beer-shop1.herokuapp.com/">Live Demo</a></p>	
+                                    <p><i class="fab fa-github"></i><a target="_blank" rel="noopener noreferrer" href="https://github.com/spicysos/Beer"> Github</a></p>	
+
+                                </ul>	
+                                </div>	
+                            </div>	
+                            </div>	
+                        </div>	
+                        </div>	
+                    </div> -->
+        
+
+            
+            </div>
+        </section>
+    
+    
     </div>
-  </section>
-
 
 
 
