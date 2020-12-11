@@ -190,6 +190,7 @@ hr.divider{
   padding: 6% 0;
   max-width: 1000px;
   margin: 0 auto;
+  padding-bottom: 0;
 }
 
 .first {
@@ -250,6 +251,11 @@ hr.divider{
   color: #2e857f;
   box-shadow: 0 1px 1px rgba(16,27,30,0.15), 0 2px 2px rgba(16,27,30,0.15), 0 4px 4px rgba(16,27,30,0.15), 0 8px 8px rgba(16,27,30,0.15), 0 16px 16px rgba(16,27,30,0.15);
   cursor: pointer;
+}
+.blog-realistic-shadow-box.works {
+  
+  color: rosybrown;
+  
 }
 .blog-realistic-shadow-box:hover{
   /* animation: roll 1s infinite;
