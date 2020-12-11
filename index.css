@@ -193,6 +193,10 @@ hr.divider{
   padding-bottom: 0;
 }
 
+.dearest-io.portfolio-show .description {
+  padding: 6%;
+}
+
 .first {
   -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
@@ -572,6 +576,15 @@ footer .copyright {
 }
 
 @media only screen and (max-width: 767px) {
+  .tile-wrapper.tile-1 .image-container img {
+    max-width: 100%;
+  }
+  .container .typewriter p {
+    font-size: 18px;
+    white-space: break-spaces;
+    animation: none;
+    border: none;
+  }
   #portfolio .container  {
     padding: 0;
   }
@@ -593,7 +606,7 @@ footer .copyright {
   }
   .my-picture {
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
   }
   #about .desc {
     width: 100%;
@@ -630,21 +643,19 @@ footer .copyright {
     right: 40px;
     width: 40px;
     height: 40px;
-}
-.portfolio-modal .modal-content p {
-  margin-bottom: 1rem;
-}
-.portfolio-modal .modal-content img {
-  margin-bottom: 0;
-}
-.no-gutters>[class*=col-] {
-  margin: 0.5rem 0rem;
-}
-.portfolio-modal .modal-content h2 {
-  font-size: 1.5rem;
-}
-
-
+  }
+  .portfolio-modal .modal-content p {
+    margin-bottom: 1rem;
+  }
+  .portfolio-modal .modal-content img {
+    margin-bottom: 0;
+  }
+  .no-gutters>[class*=col-] {
+    margin: 0.5rem 0rem;
+  }
+  .portfolio-modal .modal-content h2 {
+    font-size: 1.5rem;
+  }
 }
 
 
@@ -746,7 +757,30 @@ img::-moz-selection {
   letter-spacing: 0.9px;
 }
 
+/* @media only screen and (max-width: 1200px) {
+  .container .typewriter p {
+    font-size: 20px;
+    
+  }
+} */
+
+@media only screen and (min-width: 768px) {
+  header.masthead .page-heading,
+  header.masthead .post-heading,
+  header.masthead .site-heading {
+    padding: 200px 0;
+  }
+  .container .typewriter p {
+    font-size: 20px;
+  }
+}
+
+
 @media only screen and (min-width: 992px) {
+  .container .typewriter p {
+    font-size: 22px;
+  }
+
   #mainNav {
     border-bottom: 1px solid transparent;
     background: transparent;
@@ -766,7 +800,11 @@ img::-moz-selection {
     color: rgba(255, 255, 255, 0.8);
   }
 }
-
+@media only screen and (min-width: 1200px) {
+  .container .typewriter p {
+    font-size: 26px;
+  }
+}
 @media only screen and (min-width: 992px) {
   #mainNav {
     transition: background-color 0.2s;
@@ -847,13 +885,6 @@ header.masthead .site-heading {
   color: white;
 }
 
-@media only screen and (min-width: 768px) {
-  header.masthead .page-heading,
-  header.masthead .post-heading,
-  header.masthead .site-heading {
-    padding: 200px 0;
-  }
-}
 
 header.masthead .page-heading,
 header.masthead .site-heading {
