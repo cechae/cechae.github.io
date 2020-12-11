@@ -576,6 +576,12 @@ footer .copyright {
 }
 
 @media only screen and (max-width: 767px) {
+  #contact .container {
+    padding: 0;
+  }
+  .checkout-work .btn {
+    padding: 2rem;
+  }
   .tile-wrapper.tile-1 .image-container img {
     max-width: 100%;
   }
