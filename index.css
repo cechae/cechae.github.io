@@ -4,6 +4,7 @@ body {
   color: #fff;
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }
 h1,h2,h3,h4,h5,h6, .contact-me, .contact-me h4 {
   font-weight: 600;
@@ -78,7 +79,9 @@ hr.divider{
 .skillItem .item {
   margin-bottom: 0.4rem;
 }
-
+.portfolio-show header.masthead .site-heading {
+  padding: 140px 0;
+}
 
 .fab.fa-github {
   font-size: 1.5rem;
@@ -576,6 +579,9 @@ footer .copyright {
 }
 
 @media only screen and (max-width: 767px) {
+  .portfolio-show header.masthead .site-heading {
+    padding-bottom: 40px;
+  }
   #contact .container {
     padding: 0;
   }
@@ -876,9 +882,7 @@ header.masthead .overlay {
 .portfolio-show .description  p.h2-explanation {
   font-size: 1.2rem;
 }
-.portfolio-show header.masthead .site-heading {
-  padding: 140px 0;
-}
+
 header.masthead.portfolio-show .overlay {
   
   background-color: #191a1d;
