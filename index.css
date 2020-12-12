@@ -20,6 +20,27 @@ section {
   background-color: #FEFAF6;
   padding-bottom: 4%;
 }
+.dearest-io .carousel-inner .w-100 {
+  width: 100% !important;
+  margin: 0 auto;
+}
+a.carousel-control-next, a.carousel-control-prev {
+  filter: brightness(0.75);
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  display: inline-block;
+  width: 48px !important;
+  height: 48px !important;
+}
+#carousel img {
+  max-height: 713px;
+    width: auto !important;
+}
+#carousel {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .checkout-work {
   background-color: #FEFAF6;
   text-align: center;
@@ -124,6 +145,10 @@ hr.divider{
   margin: 0;
 
 }
+.live-demo {
+  text-align: center;
+  font-size: 2rem;
+}
 .dearest-building .tile-wrapper {
   padding-top: 0;
 }
@@ -132,10 +157,7 @@ hr.divider{
   max-width: 1000px;
   margin: 0 auto;
 }
-.tile-2 {
-  /* background: linear-gradient(338.83deg, rgba(218,184,105,0.87718837535014) -3.41%, rgba(197,226,232,1) 52.31%); */
-  
-}
+
 .tile {
   cursor: pointer;
 }
