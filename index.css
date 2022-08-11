@@ -72,7 +72,9 @@ hr.divider{
   border-color: #f4623a;
   padding-bottom: 20px;
 }
-
+.large-text {
+  font-size: 2rem;
+}
 .btn.btn-xl {
   margin-top: 2rem;
   padding: 1.25rem 2.25rem;
@@ -361,14 +363,14 @@ hr.divider{
   padding-bottom: 7rem;
 }
 #portfolio {
-  background-color:  #e9c3b8;
+  background-color:  #fccbbb;
   padding-bottom: 10%;
   padding-top: 5%;
 }
 #skills {
   /* background-color: #3bab87;
   color: #fff; */
-  background-color: #2e857f;
+  background-color: #81b5b2;
   color: #fff;
 }
 
