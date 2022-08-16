@@ -44,7 +44,7 @@ a.carousel-control-next, a.carousel-control-prev {
 .checkout-work {
   background-color: #FEFAF6;
   text-align: center;
-  padding: 6%;
+  padding: 0;
 }
 a {
   color: #212529;
@@ -174,6 +174,11 @@ hr.divider{
 }
 .tile-wrapper.tile-2 .image-container img {
   border-radius: 10px;
+}
+.tile-wrapper.tile-2 .image-container img.crime-data {
+  padding-top: 3rem;
+  padding-bottom: 0;
+  width: 800px;
 }
 .checkout-work  .btn {
   box-sizing: border-box;
