@@ -402,7 +402,10 @@ hr.divider{
   }
 }
 
-
+.project-modal li {
+  list-style: initial;
+  text-align: left;
+}
 
 
 #contact {
