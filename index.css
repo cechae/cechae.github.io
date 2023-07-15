@@ -19,11 +19,13 @@ body {
   align-items: center;
 }
 a.my-resume {
-  color: aliceblue;
-  font-size: 18px;
+  color:  #ffdbb2 !important;
+  font-size: 22px;
 }
 a.my-resume:hover {
-  color:rgba(38, 49, 53, 0.9);
+  /* color: #c2d8f7; */
+  /* color: #ffdbb2; */
+  color: #ffbf80;
 }
 .white-color{
   color: #ffffff;
