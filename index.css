@@ -18,6 +18,24 @@ body {
   justify-content: center;
   align-items: center;
 }
+/* Define the aspect ratio for the image container */
+#portfolio .image-container {
+  width: 100%; /* You can adjust this value as needed */
+  position: relative;
+  padding-bottom: 62.5%; /* This ensures a 1.6:1 aspect ratio (width:height) */
+  overflow: hidden;
+}
+
+/* Style the image to fill the container */
+#portfolio .image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 a.my-resume {
   color:  #ffdbb2 !important;
   font-size: 22px;
