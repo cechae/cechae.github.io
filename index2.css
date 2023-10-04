@@ -69,7 +69,9 @@ body {
 }
 
 /* Expertise section css */
-
+#portfolio .text-center {
+  margin-bottom: 2.5rem;
+}
 .skill-name {
   font-size: 1.3rem;
 }
