@@ -101,7 +101,8 @@
   font-weight: 500;
   color: #084227;
 }
-#contact .card-footer {
+#contact .card-footer,
+#about .card-footer {
   padding: none;
   background-color: transparent;
   border: none;

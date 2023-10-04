@@ -147,3 +147,6 @@ body {
 #contact .social-icons i {
   padding-right: 0.5rem;
 }
+#contact .social-icons {
+  cursor: auto;
+}
