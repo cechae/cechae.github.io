@@ -1,76 +1,437 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>JenniferChae</title>
-    <link rel="stylesheet" text="text/css" href="index.css">
-    <link rel="stylesheet" text="text/scss" href="/_portfolio.scss">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="animate.css">
-    <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/css/uikit.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>JenniferChae</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- linking css file -->
+    <link rel="stylesheet" text="text/css" href="index2.css" />
+    <!-- bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/31149d48b0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--     
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/css/uikit.min.css"
+    /> -->
   </head>
-<body>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+      <div class="container">
+        <a class="navbar-brand" href="#">Jennifer</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#expertise">Expertise</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+      <div class="container-fluid">
+        <div class="">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+            <h2 class="hero_title bold">Hi there! I'm Jennifer.</h2>
+            <!-- <p class="hero_desc bold">
+              I am currently studying Computer Science at New York University.
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- about section-->
+    <section id="about">
+      <div class="container mt-4 pt-4">
+          <h1 class="text-center">About Me</h1>
+          <div class="row mt-4">
+              <div class="col-lg-4">
+                  <img src="mypic.JPG" class= "imageAboutPage" alt="">
+              </div>
+
+              <div class="col-lg-8">
+                  <p> 
+                    Hi! I'm a 2nd-year master's student studying computer science with a passion for creating user-friendly web experiences. 
+                    I'm in the final semester for completing my degree at New York University, expected to graduate in December, 2023.
+                    In addition to my academic background, I have 3 years of hands-on experience as a full-stack software engineer, specializing in the MERN (MongoDB, Express.js, React.js, Node.js) stack.
+                    
+                    
+                  </p>
+                 
+                  <p>
+                    Before joining NYU, I earned a Bachelor's degree in cognitive science and biology at University of Pennsylvania.
+                    During my undergraduate years, my academic focus centered on understanding the intricacies of computational processes within the human brain. 
+                    Cognitive science, as an interdisciplinary major, allowed me to combine insights from biology, computer science, and psychology. 
+                    It provided me with a unique perspective on how the mind processes information and, interestingly, it's a perspective that has proven invaluable in my current career as a full-stack software engineer.
+                 
+                 
+                  </p>
+                  <p>
+                    My knowledge of cognitive science has not only enhanced my problem-solving skills but also deepened my appreciation for the complex systems that underlie both human cognition and computer systems. 
+                    It has allowed me to approach software development with a deeper understanding of user experience and human-computer interaction.
+                    My journey from cognitive science to full-stack engineering has enabled me to bridge the gap between the intricacies of the human mind and the digital landscape. 
+                    It's a unique blend of perspectives that I find both intellectually stimulating and practical in delivering solutions that align seamlessly with the needs of users.
+
+                  </p>
+                  
+                  
+              </div>
+          </div>
+  </section>
+
+
+
+  <!-- services section-->
+  <section id="expertise">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><i class="fas fa-coffee"></i></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="works.html">Works</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-<!-- Page Header -->
-<header class="masthead">
-<div class="overlay"></div>
-  <div class="">
-    <div class="">
-      <div class="col-lg-10 col-md-10 mx-auto">
-        <div class="site-heading">
-          <div class="img">
-            <img class="profile-pic" src="./img/mypic.JPG"/>
-          </div>
-          <div>
-             <p class="desc">Chung Eun (Jennifer) Chae is a software engineer with 3 years of experience based in New York
-            </p>
-            <p class="desc paragraph-style"> Currently pursuing MS in Computer Science at New York University </p>
+        <h1 class="text-center">My Expertise</h1>
+        <div class="row">
+          <div class="col-lg-4 mt-4">
+            <div class="card servicesText">
+                <div class="card-body">
+                    <i class='fas servicesIcon fa-layer-group'></i>
+                    <h4 class="card-title mt-3">Languages</h4>
+                    <div class="skill-name text-align-center">
+                      <ul class="centered-list">
+                        <li>JavaScript ES6 & TypeScript</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                      </ul>
+                    </div>
+                </div>
+            </div>  
+        </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-layer-group'></i>
+                        <h4 class="card-title mt-3">Frontend Development</h4>
+                        <div class="skill-name text-align-center">
+                          <ul class="centered-list">
+                            <li>React & Redux</li>
+                            <li>HTML & CSS</li>
+                            <li>jQuery</li>
+                            <li>Bootstrap/MaterialUI</li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>  
+            </div>
 
-            <a target="_blank" class="my-resume" href="https://docs.google.com/document/d/1RIPY21CVlxx2dmbakdCSomzCgAdN-7FpJuOcUHvhbTM/edit?usp=sharing">View Resume</a>
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='far servicesIcon fa-check-circle'></i>
+                        <h4 class="card-title mt-3">Backend Development</h4>
+                        <div class="skill-name text-align-center">
+                          <ul class="centered-list">
+                            <li>Node (JavaScript) </li>
+                            <li>Express (JavaScript)</li>
+                            <li>Django (Python) </li>
+                            <li>Flask (Python) </li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            
+
+        </div>
+        <div class="row">
+
+
+          <div class="col-lg-4 mt-4">
+            <div class="card servicesText">
+                <div class="card-body">
+                    <i class='far servicesIcon fa-check-circle'></i>
+                    <h4 class="card-title mt-3">Databases</h4>
+                    <div class="skill-name text-align-center">
+                      <ul class="centered-list">
+                        <li>MongoDB</li>
+                        <li>MySQL & PostgreSQL </li>
+                      </ul>
+                    </div>
+                </div>
+            </div>  
           </div>
+            
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-search'></i>
+                        <h4 class="card-title mt-3">API Query Languages/Middleware</h4>
+                        <div class="skill-name text-align-center">
+                          <ul class="centered-list">
+
+                            <li>REST API </li>
+                            <li>GraphQL </li>
+                            
+                          </ul>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card servicesText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-shield-alt'></i>
+                        <h4 class="card-title mt-3">Testing</h4>
+                        <div class="skill-name text-align-center">
+                          <ul class="centered-list">
+
+                            <li>Jest (JavaScript)</li>
+                            <li>PyTest (Python)</li>
+                            
+                          </ul>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+
+           
+
+            
+        </div>
+        <div class="row">
+
+
+          <div class="col-lg-4 mt-4">
+            <div class="card servicesText">
+                <div class="card-body">
+                    <i class='fas servicesIcon fa-wrench'></i>
+                    <h4 class="card-title mt-3">Other Tools/Services</h4>
+                    <div class="skill-name text-align-center">
+                      <ul class="centered-list">
+
+                        <li>SocketIO</li>
+                        <li>Nginx </li>
+                        <li>AWS Services (S3, EC2)</li>
+
+                      </ul>
+                    </div>
+                </div>
+            </div>  
+          </div>
+
+          <div class="col-lg-4 mt-4">
+            <div class="card servicesText">
+                <div class="card-body">
+                    <i class="fas servicesIcon fa-chart-bar"></i>
+                    
+                    <h4 class="card-title mt-3">Data Analysis & Visualization</h4>
+                    <div class="skill-name text-align-center">
+                      <ul class="centered-list">
+                        <li>D3.js</li>
+                        <li>Numpy</li>
+                        <li>Pandas</li>
+                        <li>Jupyter Notebook</li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+              </div>  
+          </div>
+
+
+          <div class="col-lg-4 mt-4">
+            <div class="card servicesText">
+                <div class="card-body">
+                    <i class="fas servicesIcon fa-chart-bar"></i>
+                    
+                    <h4 class="card-title mt-3">Machine Learning</h4>
+                    <div class="skill-name text-align-center">
+                      <ul class="centered-list">
+                        <li>Scikit-Learn</li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+              </div>  
+          </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- portfolio section-->
+<section id="portfolio">
+  <div class="container mt-3">
+      <h1 class="text-center">Portfolio</h1>
+      <div class="row">
+          <div class="col-lg-4 mt-4">
+              <div class="card">
+                  <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                      <h4 class="card-title">YouTube Clone</h4>
+                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <div class="text-center">
+                          <a href="#" class="btn btn-success">Link</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-lg-4 mt-4">
+              <div class="card portfolioContent">
+                  <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                      <h4 class="card-title">Quiz App</h4>
+                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <div class="text-center">
+                          <a href="#" class="btn btn-success">Link</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-lg-4 mt-4">
+              <div class="card portfolioContent">
+                  <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                      <h4 class="card-title">Product Landing Page</h4>
+                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <div class="text-center">
+                          <a href="#" class="btn btn-success">Link</a>
+                      </div>
+                  </div>
+              </div>
           </div>
       </div>
-    </div>
+      <br>
+      <div class="row">
+          <div class="col-lg-4 mt-4">
+              <div class="card portfolioContent">
+                  <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                      <h4 class="card-title">Messaging Service</h4>
+                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <div class="text-center">
+                          <a href="#" class="btn btn-success">Link</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-lg-4 mt-4">
+              <div class="card portfolioContent">
+                  <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                      <h4 class="card-title">Twitter Clone</h4>
+                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <div class="text-center">
+                          <a href="#" class="btn btn-success">Link</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-lg-4 mt-4">
+              <div class="card portfolioContent">
+                  <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                  <div class="card-body">
+                      <h4 class="card-title">Blog App</h4>
+                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <div class="text-center">
+                          <a href="#" class="btn btn-success">Link</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+</section>
+
+
+
+
+ 
+<!-- contact section-->
+<section id="contact">
+  <div class="container mt-3 contactContent">
+      <h1 class="text-center">Contact Me</h1>
+
+      <div class="row mt-4">
+          <div class="col-lg-6">
+            
+            <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;"><div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Manhattan,+New+York,+NY,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="google-map-html" rel="nofollow" href="https://kbj9qpmy.com/hrn" id="enable-map-data">Hosting Right Now</a><style>#google-maps-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
+          
+          
+          </div>
+
+          <div class="col-lg-6">
+              <!-- <form>
+                  <input type="text" class="form-control form-control-lg" placeholder="Name">
+                  <input type="email" class="form-control mt-3" placeholder="Email">
+                  <input type="text" class="form-control mt-3" placeholder="Subject">
+                  <div class="mb-3 mt-3">
+                      <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
+                  </div>
+              </form> -->
+              <div>
+                <a href="mailto:cchae216@gmail.com">
+                  <button type="button" class="btn btn-success">Email Me!</button>
+                </a>
+              </div>
+              
+                <!-- social media icons -->
+              <div class="social-icons mt-4">
+                    <a href="https://github.com/cechae" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/chung-eun-chae-264551121/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    
+              </div>
+              
+              
+          </div>
+
+      </div>
   </div>
-</header>
+</section>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <!-- UIkit JS -->
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/js/uikit.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/js/uikit-icons.min.js"></script>
-  <script type="text/javascript" src="app.js"></script>
-</body>
+
+
+
+   <!-- Bootstrap core JavaScript -->
+   <script src="script/script.js"></script>
+  </body>
 </html>
+
+
