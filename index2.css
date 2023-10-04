@@ -81,7 +81,7 @@ body {
   padding-left: 0;
 }
 .servicesText.card {
-  height: 280px;
+  height: 256px;
   cursor: pointer;
 }
 .servicesIcon {
@@ -149,4 +149,21 @@ body {
 }
 #contact .social-icons {
   cursor: auto;
+}
+
+@media (max-width: 768px) {
+  #about,
+  #services,
+  #expertise,
+  #portfolio,
+  #contact {
+    margin-top: 4rem;
+    padding-top: 0rem;
+  }
+  #about p {
+    margin-top: 2rem;
+  }
+  .servicesText.card {
+    height: auto;
+  }
 }
