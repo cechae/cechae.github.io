@@ -142,4 +142,8 @@ body {
 }
 #contact button {
   font-size: 1.3rem;
+  text-transform: none;
+}
+#contact .social-icons i {
+  padding-right: 0.5rem;
 }

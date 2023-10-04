@@ -63,30 +63,31 @@
 .cards-holder .card-footer {
   padding: var(--padding);
 }
-.cards-holder .card-footer .btn {
+.card-footer .btn {
   background-color: var(--btncolor);
   border: none;
   padding: 0.5em 1.125rem;
   color: white;
   cursor: pointer;
   border-radius: 25px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 600;
   text-transform: uppercase;
   -webkit-transition: background-color 0.7s ease-in-out;
   transition: background-color 0.7s ease-in-out;
 }
-.cards-holder .card-footer .btn.btn-outline {
-  background: none;
-  border: 1px solid var(--btncolor);
+.card-footer .btn.btn-outline {
+  background: white;
+  border: 2px solid var(--btncolor);
   color: var(--hovercolor);
 }
-.cards-holder .card-footer .btn:hover {
+.card-footer .btn:hover {
   background-color: var(--hovercolor);
 }
-.cards-holder .card-footer .btn.btn-outline:hover {
+.card-footer .btn.btn-outline:hover {
   color: white;
 }
-.cards-holder .card-footer .btn + .btn {
+.card-footer .btn + .btn {
   margin-left: 1rem;
 }
 .cards-holder .card:hover {
@@ -99,4 +100,9 @@
 .cards-holder .tech-used {
   font-weight: 500;
   color: #084227;
+}
+#contact .card-footer {
+  padding: none;
+  background-color: transparent;
+  border: none;
 }
